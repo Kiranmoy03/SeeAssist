@@ -1,0 +1,49 @@
+# Android / Gradle
+.gradle/
+**/build/
+local.properties
+*.jks
+*.keystore
+*.apk
+*.aab
+
+# Android Studio / IDE
+.idea/
+*.iml
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# Secrets / environment
+.env
+.env.*
+*.key
+*.pem
+secrets.*
+credentials.*
+
+# Models / datasets / large files
+*.pt
+*.pth
+*.onnx
+*.tflite
+*.bin
+models/
+datasets/
+data/
+
+# Temporary captures / outputs
+frames/
+captures/
+best_frame.jpg
+cam*.jpg
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
