@@ -39,7 +39,7 @@ The Android application uses Kotlin and Android speech/audio APIs. The hardware 
 
 ## Progress
 
-**Verified in earlier prototype tests:** ESP32-CAM image capture, Android-to-camera communication, multi-frame image selection, spoken/typed questions, AI responses and spoken playback. See [Day 1 test notes](docs/DAY1_STATUS.md).
+**Verified in earlier prototype tests:** ESP32-CAM image capture, Android-to-camera communication, multi-frame image selection, spoken/typed questions, AI responses and spoken playback. See [prototype test notes](docs/PROTOTYPE_TESTS.md).
 
 **In development:** hands-free mode, wake-word detection, Bluetooth microphone handling and background operation. The Android code has been edited and built in the development environment, but reliable wake-word detection and full real-phone testing are still pending.
 
