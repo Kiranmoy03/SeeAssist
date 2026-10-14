@@ -3,7 +3,7 @@
 Updated: 14 October 2026
 
 ## Tested in the initial prototype
-The Day 1 milestone records the following as tested:
+Earlier prototype testing recorded:
 - ESP32-CAM camera capture and Android communication
 - Discarding two stale frames, collecting five new frames and selecting a better image
 - Voice/typed question input, backend routing to VQA/OCR/detection and spoken answers
@@ -23,7 +23,7 @@ The Android app currently under development includes code for microphone status,
 - Reproducible builds from this GitHub repository
 
 ## Current repository gap
-The repository contains notes and milestones, but the latest Android sources, ESP32 firmware sketch, Python receiver and Colab notebook still need to be exported and added. Test those files and remove credentials before committing.
+The Android source is available in the separate [seeassist-app repository](https://github.com/Kiranmoy03/seeassist-app). The ESP32 firmware sketch, Python receiver and Colab notebook still need to be exported and added to the main project. Test those files and remove credentials before committing.
 
 ## Next checkpoint
-Commit sanitized project files, provide build/setup instructions, then reproduce the test on a phone connected to the ESP32-CAM. Record pass/fail results and known limitations.
+Review the Android source integration, provide reproducible build/setup instructions, then reproduce the test on a phone connected to the ESP32-CAM. Record pass/fail results and known limitations.
