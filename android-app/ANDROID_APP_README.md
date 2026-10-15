@@ -40,12 +40,12 @@ A successful build or UI preview in a development environment is not proof of en
 This is a **development snapshot**, not a ready-to-install release.
 
 - Android Studio and an Android SDK compatible with the project are required.
-- The Gradle wrapper scripts (`gradlew`, `gradlew.bat` and `gradle/wrapper/gradle-wrapper.jar`) have not yet been committed.
-- `app/build.gradle.kts` expects `app/libs/sherpa-onnx-1.13.8.aar`, which has not yet been committed. Get an appropriate compatible artifact from the official sherpa-onnx distribution and verify its origin and licence before adding it.
-- The current debug signing configuration points at a local `debug.keystore` file; confirm a working local debug-signing setup before building.
+- The official Gradle 9.3.1 launcher scripts are included. The wrapper JAR is downloaded and checksum-verified by the setup script.
+- The build requires the official sherpa-onnx 1.13.8 Android AAR, downloaded and SHA-256-verified by the setup script. The large binary is not stored in Git.
+- Debug builds now use Android's standard debug-signing configuration. Release signing still requires your own private keystore.
 - An ESP32-CAM and a reachable development backend are required for the full workflow.
 
-Once those dependencies are resolved, import this project into Android Studio, sync Gradle, and run on a physical Android phone. Record the actual build and test results before declaring the app reproducible.
+On Windows, open PowerShell in the project folder and run `powershell -ExecutionPolicy Bypass -File .\\scripts\\setup-android-deps.ps1`. It downloads the two missing binary files from the official Gradle and sherpa-onnx releases and checks their published SHA-256 hashes. Then open the project in Android Studio, sync Gradle, and run on a physical Android phone. This process has not yet been tested end-to-end in a clean Android SDK environment. Record the actual build and test results before declaring the app reproducible.
 
 ### App configuration
 
@@ -81,7 +81,7 @@ The included third-party wake-word model is attributed in its asset directory. C
 
 ## Next work
 
-- Restore missing Android build dependencies and verify a clean-clone build
+- Run the checksum-verified dependency setup and verify a clean-clone Android build
 - Test microphone and Bluetooth routing on a real phone
 - Verify wake-word detection and screen-off/background behavior
 - Remove unused template dependencies only after a successful build and regression check
