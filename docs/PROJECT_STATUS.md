@@ -23,7 +23,7 @@ The Android app currently under development includes code for microphone status,
 - Reproducible builds from this GitHub repository
 
 ## Current repository gap
-The Kotlin Android source is included in [`android-app/`](../android-app/). The ESP32 firmware sketch, Python receiver and Colab notebook still need to be exported and added. The Gradle wrapper scripts/JAR and sherpa-onnx AAR are also missing, so a clean build remains unverified. Test those files and remove credentials before committing.
+The Kotlin Android source is included in [`android-app/`](../android-app/). The ESP32 firmware sketch, Python receiver and Colab notebook still need to be exported and added. The wrapper launchers and checksum-verified dependency setup script are present, but the wrapper JAR and sherpa-onnx AAR are downloaded locally. A clean build remains unverified. Test those files and remove credentials before committing.
 
 ## Next checkpoint
 Restore Android build dependencies, provide reproducible setup instructions, then reproduce the test on a phone connected to the ESP32-CAM. Record pass/fail results and known limitations.
