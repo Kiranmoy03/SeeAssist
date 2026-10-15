@@ -57,11 +57,11 @@ colab/         Model/backend notes; notebook upload pending
 docs/          Test notes, architecture and project status
 ```
 
-**Android source:** The Kotlin app now lives in [`android-app/`](android-app/). Development continues in the private AI Studio-connected `seeassist-app` repository; a GitHub Actions workflow can propose Android updates here via pull requests. The ESP32 sketch, Python receiver and Colab notebook still need to be added. A clean Android build remains unverified because the Gradle wrapper scripts/JAR and the referenced sherpa-onnx AAR are missing.
+**Android source:** The Kotlin app now lives in [`android-app/`](android-app/). Development continues in the private AI Studio-connected `seeassist-app` repository; a GitHub Actions workflow can propose Android updates here via pull requests. The ESP32 sketch, Python receiver and Colab notebook still need to be added. A clean Android build remains unverified. The Gradle launcher scripts are present; the wrapper JAR and sherpa-onnx AAR can be downloaded using the [checksum-verified Windows setup script](android-app/scripts/setup-android-deps.ps1).
 
 ## Next steps
 
-1. Restore missing Android build dependencies and confirm a clean build from a fresh clone.
+1. Run the verified Android dependency setup, then confirm a clean build from a fresh clone.
 2. Add the ESP32-CAM sketch, receiver script and runnable Colab notebook.
 3. Improve and test wake-word detection, hands-free audio and phone background behavior.
 4. Test on the actual hardware, then document results, limitations and setup steps.
