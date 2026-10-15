@@ -28,4 +28,4 @@ ESP32-CAM --Wi-Fi image--> Android app
 
 ## Current limitations
 
-The hardware/software link depends on network access and a running backend. AI output can be inaccurate; visual responses are not reliable enough for safety-critical navigation. The Android source is available in [seeassist-app](https://github.com/Kiranmoy03/seeassist-app), but a clean build and complete end-to-end reproduction are not yet verified. This file describes architecture rather than installation steps.
+The hardware/software link depends on network access and a running backend. AI output can be inaccurate; visual responses are not reliable enough for safety-critical navigation. The Android source is now included in [`android-app/`](../android-app/), but a clean build and complete end-to-end reproduction are not yet verified. This file describes architecture rather than installation steps.
