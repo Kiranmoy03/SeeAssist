@@ -23,7 +23,7 @@ The Android app currently under development includes code for microphone status,
 - Reproducible builds from this GitHub repository
 
 ## Current repository gap
-The Android source is available in the separate [seeassist-app repository](https://github.com/Kiranmoy03/seeassist-app). The ESP32 firmware sketch, Python receiver and Colab notebook still need to be exported and added to the main project. Test those files and remove credentials before committing.
+The Kotlin Android source is included in [`android-app/`](../android-app/). The ESP32 firmware sketch, Python receiver and Colab notebook still need to be exported and added. The Gradle wrapper scripts/JAR and sherpa-onnx AAR are also missing, so a clean build remains unverified. Test those files and remove credentials before committing.
 
 ## Next checkpoint
-Review the Android source integration, provide reproducible build/setup instructions, then reproduce the test on a phone connected to the ESP32-CAM. Record pass/fail results and known limitations.
+Restore Android build dependencies, provide reproducible setup instructions, then reproduce the test on a phone connected to the ESP32-CAM. Record pass/fail results and known limitations.
