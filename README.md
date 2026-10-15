@@ -50,18 +50,18 @@ For a more current breakdown, see [Project status](docs/PROJECT_STATUS.md) and [
 ## Repository layout
 
 ```text
-android-app/   Android app notes; source currently tracked in seeassist-app
+android-app/   Kotlin Android app source, tests and Gradle configuration
 esp32-cam/     ESP32-CAM firmware notes; sketch upload pending
 receiver/      Desktop receiver notes; script upload pending
 colab/         Model/backend notes; notebook upload pending
 docs/          Test notes, architecture and project status
 ```
 
-**Android source:** The Kotlin application is now available in the separate [seeassist-app repository](https://github.com/Kiranmoy03/seeassist-app), which is connected to Google AI Studio. The Android code has **not yet been merged** into this repository. A sync workflow is being prepared to propose changes under `android-app/` for review, without replacing the main project's documents. The ESP32 sketch, Python receiver and Colab notebook still need to be added, and a clean Android build is pending missing dependencies.
+**Android source:** The Kotlin app now lives in [`android-app/`](android-app/). Development continues in the private AI Studio-connected `seeassist-app` repository; a GitHub Actions workflow can propose Android updates here via pull requests. The ESP32 sketch, Python receiver and Colab notebook still need to be added. A clean Android build remains unverified because the Gradle wrapper scripts/JAR and the referenced sherpa-onnx AAR are missing.
 
 ## Next steps
 
-1. Review and merge the Android source from `seeassist-app`, then confirm it builds from a fresh clone.
+1. Restore missing Android build dependencies and confirm a clean build from a fresh clone.
 2. Add the ESP32-CAM sketch, receiver script and runnable Colab notebook.
 3. Improve and test wake-word detection, hands-free audio and phone background behavior.
 4. Test on the actual hardware, then document results, limitations and setup steps.
