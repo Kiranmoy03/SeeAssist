@@ -45,7 +45,7 @@ The Android application uses Kotlin and Android speech/audio APIs. The hardware 
 
 **Not yet validated as an assistive feature:** navigation and obstacle alerts, extended wearable battery operation, and real-world reliability testing.
 
-For a more current breakdown, see [Project status](docs/PROJECT_STATUS.md) and [Architecture](docs/ARCHITECTURE.md).
+For a more current breakdown, see [Project status](docs/PROJECT_STATUS.md), [Architecture](docs/ARCHITECTURE.md), and [VQA evaluation results and confusion-matrix explanation](docs/EVALUATION.md).
 
 ## Repository layout
 
